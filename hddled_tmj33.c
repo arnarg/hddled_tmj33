@@ -58,6 +58,7 @@
 #include <linux/fs.h>             // Header for the Linux file system support
 #include <linux/uaccess.h>        // Required for the copy to user function
 #include <linux/slab.h>           // For kmalloc/kfree
+#include <linux/io.h>             // Added because the module would not compile under Kernel 5.6 without it
 
 #ifndef HDDLED_TMJ33_VERSION
 #define HDDLED_TMJ33_VERSION "unknown"
