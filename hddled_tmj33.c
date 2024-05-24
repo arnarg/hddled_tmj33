@@ -127,7 +127,7 @@ static int __init hddled_init(void) {
 	}
 	printk(KERN_INFO "HDDLed: registered correctly with major number %d\n", majorNumber);
 
-	hddledClass = class_create(THIS_MODULE, CLASS_NAME);
+	hddledClass = class_create(CLASS_NAME);
 	if (IS_ERR(hddledClass)) {
 		unregister_chrdev(majorNumber, "hddled");
 		printk(KERN_ALERT "Failed to register device class\n");
