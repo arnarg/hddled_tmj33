@@ -61,7 +61,7 @@
 #include <linux/io.h>             // Added because the module would not compile under Kernel 5.6 without it
 
 #ifndef HDDLED_TMJ33_VERSION
-#define HDDLED_TMJ33_VERSION "unknown"
+#define HDDLED_TMJ33_VERSION "0.3"
 #endif
 
 #define DEVICE_NAME "hddled"
